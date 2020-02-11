@@ -102,6 +102,9 @@ return [
         Laravel\Passport\PassportServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+        Adldap\Laravel\AdldapServiceProvider::class,
+        Adldap\Laravel\AdldapAuthServiceProvider::class
+
     ],
 
 
@@ -154,6 +157,7 @@ return [
         'Theme' => Igaster\LaravelTheme\Facades\Theme::class,
         'Menu'      => Lavary\Menu\Facade::class,
 
+        'Adldap' => Adldap\Laravel\Facades\Adldap::class,
 
     ],
 

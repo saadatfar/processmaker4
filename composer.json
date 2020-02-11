@@ -17,6 +17,7 @@
   ],
   "require": {
     "php": ">=7.2.0",
+    "adldap2/adldap2-laravel": "^6.0",
     "darkaonline/l5-swagger": "5.8.*",
     "doctrine/dbal": "^2.9",
     "fideloper/proxy": "^4.0",
