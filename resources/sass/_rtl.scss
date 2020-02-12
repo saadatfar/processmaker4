@@ -397,9 +397,26 @@
       margin-right: 0 !important;
     }
   }
+
+  //JSON and Code Editor
   .editor-inspector, .monaco-editor {
     direction: ltr !important;
     text-align: left;
+  }
+
+  // Modeler UI bug fix
+  .modeler {
+    margin-left: 0 !important;
+    .accordion-button{
+      padding-left: 0.75rem !important;
+      padding-right: 0.25 !important;
+    }
+    .form-check {
+      padding-left: 0 !important;
+    }
+    .form-group, .form-text{
+      text-align: right !important;
+    }
   }
 
 }
