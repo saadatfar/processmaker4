@@ -336,6 +336,16 @@
 
   //Processmaker Specialized!
   .search-bar-advanced {
+    .form-control {
+      border-right-width: 1px !important;
+      border-left-width: 0 !important;
+
+      border-bottom-right-radius: $form-control-border-radius !important;
+      border-top-right-radius: $form-control-border-radius !important;
+
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
     .btn-search-run {
       border-bottom-left-radius: $form-control-border-radius !important;
       border-top-left-radius: $form-control-border-radius !important;
@@ -343,12 +353,21 @@
       border-bottom-right-radius: 0 !important;
       border-top-right-radius: 0 !important;
     }
-
-    .multiselect {
-      .multiselect__tags {
-        border-right-color: #ddd !important;
-        border-left-width: 0 !important;
-        border-right-width: 1px !important;
+    @include media-breakpoint-up(md) {
+      .multiselect {
+        .multiselect__tags {
+          border-right-color: #ddd !important;
+          border-left-width: 0 !important;
+          border-right-width: 1px !important;
+        }
+        &:first-child {
+          .multiselect__tags {
+            border-bottom-right-radius: $form-control-border-radius !important;
+            border-top-right-radius: $form-control-border-radius !important;
+            border-bottom-left-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+          }
+        }
       }
     }
   }
@@ -361,4 +380,19 @@
       border-top-right-radius: 0 !important;
     }
   }
+  //sidebar/sidebar.scss
+  #sidebar{
+    .section{
+      margin-left: 0 !important;
+      margin-right: 16px !important;
+    }
+  }
+  //admin/queues.scss
+  #mainSidebar{
+    i {
+      margin-left: 1.5rem !important;
+      margin-right: 0 !important;
+    }
+  }
+
 }
