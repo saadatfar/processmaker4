@@ -394,5 +394,9 @@
       margin-right: 0 !important;
     }
   }
+  .editor-inspector, .monaco-editor {
+    direction: ltr !important;
+    text-align: left;
+  }
 
 }
